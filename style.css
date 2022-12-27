@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+body{
+    background-color: #1B1A17;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+h1{
+    font-size: 6.5rem;
+    font-weight: 900;
+    margin-top: 5rem;
+    color: #fff;
+    position: relative;
+    width: 60%;
+    display: inline-block;
+}
+.first-container{
+    margin: 20px 10%;
+    background: no-repeat right url(./images/watcher-profile-picture.jpg);
+    height: 100vh;
+}
+.nav-right{
+    display: flex;
+    list-style-type: none;
+}
+.nav-right img{
+    height: 30px;
+    width: 30px;
+}
+.nav-right li{
+    margin-left: 40px;
+}
+span{
+    border-bottom: 7px solid #1E5128;
+}
+.profile-desc p{
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 40%;
+}
+.profile-desc a{
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.profile-desc a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 3px solid #1E5128;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
