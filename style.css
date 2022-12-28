@@ -24,9 +24,22 @@ h1{
     width: 60%;
     display: inline-block;
 }
+.profile-desc h1::after{
+    content: '';
+    position: absolute;
+    width: 75%;
+    border-bottom: 7px solid #1E5128;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 2.5s forwards;
+}
 .first-container{
     margin: 20px 10%;
-    background: no-repeat right url(./images/watcher-profile-picture.jpg);
+    background: no-repeat right url(https://cdn.dribbble.com/users/2565074/screenshots/11933278/media/c7fd083fa92fa8db7faedc034d3b5ba2.gif);
     height: 100vh;
 }
 .nav-right{
@@ -40,7 +53,7 @@ h1{
 .nav-right li{
     margin-left: 40px;
 }
-span{
+.header-name{
     border-bottom: 7px solid #1E5128;
 }
 .profile-desc p{
@@ -49,6 +62,9 @@ span{
     margin-top: 50px;
     margin-bottom: 100px;
     width: 40%;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 3.7s forwards;
 }
 .profile-desc a{
     font-size: 1.3rem;
@@ -65,4 +81,10 @@ span{
     right: 0;
     bottom: 0;
     left: 0;
+}
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
