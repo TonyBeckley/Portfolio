@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Tony's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body onload="welcomeHeader()">
     <section class="first-container">
@@ -20,7 +20,8 @@
             </nav>
         </header>
 
-        <!--Testing the div idea in order to scale th minion and add some functionality to it, if possible-->
+        <div class="scroll-tracker"></div>
+
         <div class="minion-background">
             <img src="https://cdn.dribbble.com/users/2565074/screenshots/11933278/media/c7fd083fa92fa8db7faedc034d3b5ba2.gif" alt="minion-background">
         </div>
@@ -32,6 +33,37 @@
             <a href="http://" class="internal-link">CONTACT ME</a>
         </div>
     </section>
+    <secion class="skills">
+        <hr>
+        <div class="elements">
+            <ul>
+                <li>
+                    <img src="./images/html5-6646.svg" alt="HTML">
+                    <h2>HTML5</h2>
+                </li>
+                <li>
+                    <img src="./images/icons8-css3.svg" alt="CSS">
+                    <h2>CSS3</h2>
+                </li>
+                <li>
+                    <img src="./images/icons8-javascript.svg" alt="JavaScript">
+                    <h2>JavaScript</h2>
+                </li>
+                <li>
+                    <img src="https://img.icons8.com/external-flat-juicy-fish/60/null/external-sql-coding-and-development-flat-flat-juicy-fish.png"/>
+                    <h2>SQL</h2>
+                </li>
+                <li>
+                    <img src="./images/icons8-git.svg" alt="git">
+                    <h2>GIT</h2>
+                </li>
+                <li>
+                    <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/null/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt="netlify">
+                    <h2>Netlify</h2>
+                </li>
+            </ul>
+        </div>
+    </secion>
     <script src="./app.js"></script>
 </body>
 </html>

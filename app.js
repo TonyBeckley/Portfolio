@@ -9,3 +9,4 @@ function welcomeHeader() {
         setTimeout(welcomeHeader, speed) 
     }
 }
+
