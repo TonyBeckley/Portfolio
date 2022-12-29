@@ -10,3 +10,18 @@ function welcomeHeader() {
     }
 }
 
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+        else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const listItem = document.querySelectorAll('.list-item')
+listItem.forEach((el) => observer.observe(el))
