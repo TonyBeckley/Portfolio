@@ -212,7 +212,8 @@ hr{
 
 /*contact section*/
 .contact-me{
-    margin: 20px 10%;
+    padding: 20px 10%;
+    background-color: hsl(0, 0%, 14%);
 }
 .contact-me h2, p, label{
     color: #fff;
@@ -266,9 +267,32 @@ hr{
     animation-delay: -3s;
 }
 .contact-divider form{
+    position: absolute;
+    inset: 2px;
     display: flex;
     flex-direction: column;
+    background: #171717;
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 10;
+}
+.input-field {
+    position: relative;
+    width: 400px;
+    margin-top: 50px;
+}
+.input-field input{
+    position: relative;
     width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    
+}
+.input-field span{
+    color: #fff;
 }
 
 @keyframes animate{

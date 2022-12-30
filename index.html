@@ -135,18 +135,26 @@
                 <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible</p>
             </div>
             <div class="contact-form">
-                <form action="">
-                    <label for="contact-name">NAME</label>
-                    <input type="text" name="" id="contact-name">
-                    <label for="contact-mail">EMAIL</label>
-                    <input type="email" name="" id="contact-mail">
-                    <label for="contact-message">MESSAGE</label>
-                    <input type="text" name="" id="contact-message">
+                <form autocomplete="off">
+                    <div class="input-field">
+                        <input type="text" id="contact-name">
+                        <span>Name</span>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="contact-mail">
+                        <span>Email</span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="contact-message">
+                        <span>Message</span>
+                    </div>
+                    
                     <button type="submit">SEND MESSAGE</button>
                 </form>
             </div>
         </div>
     </section>
+    <hr>
     <script defer src="./app.js"></script>
 </body>
 </html>
