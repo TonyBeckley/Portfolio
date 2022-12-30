@@ -25,7 +25,7 @@ h1{
     display: inline-block;
 }
 h2{
-    font-size: 5rem;
+    font-size: 6rem;
     color: #fff;
 }
 hr{
@@ -208,6 +208,76 @@ hr{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+/*contact section*/
+.contact-me{
+    margin: 20px 10%;
+}
+.contact-me h2, p, label{
+    color: #fff;
+}
+.contact-me h2{
+    margin-bottom: 50px;
+}
+.contact-divider{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me p{
+    font-size: 1.4rem;
+}
+.contact-desc{
+    width: 40%;
+}
+.contact-form{
+    position: relative;
+    width: 40%;
+    height: 420px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact-form::before{
+    content: '';
+    z-index: 5;
+    position: absolute;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    width: 100%;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+.contact-form::after{
+    content: '';
+    z-index: 5;
+    position: absolute;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    width: 100%;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+.contact-divider form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 @keyframes fadeInUp{
     to{
