@@ -26,6 +26,7 @@ h1{
 }
 h2{
     font-size: 5rem;
+    color: #fff;
 }
 hr{
     margin: 0 10%;
@@ -101,6 +102,8 @@ hr{
     bottom: 0;
     left: 0;
 }
+
+/*skills and tools section*/
 .skills{
     margin: 20px 10%;
     color: #fff;
@@ -140,11 +143,6 @@ hr{
     transition: all 1s;
     transition-delay: 100ms;
 }
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
 .list-item:nth-child(1){
     transition-delay: 100ms;
 }
@@ -161,14 +159,56 @@ hr{
     transition-delay: 900ms;
 }
 .list-item:nth-child(6){
-    transition-delay: 1100ms;
+    transition-delay: 1000ms;
 }
 .list-item:nth-child(7){
-    transition-delay: 1300ms;
+    transition-delay: 1100ms;
 }
 
- 
+/*Project Section*/
+.projects{
+    margin: 20px 10%;
+    overflow-x: hidden;
+}
+.projects ul{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,0.9fr);
+    list-style-type: none;
+}
+.project-styling img{
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+}
+.project-item{
+    margin-top: 20px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+    transition-delay: 100ms;
+}
+.project-styling a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.project-item h3{
+    margin-top: 20px;
+}
+.project-item p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    word-spacing: 10px;
+}
 
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 @keyframes fadeInUp{
     to{
         opacity: 1;

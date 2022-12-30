@@ -25,3 +25,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const listItem = document.querySelectorAll('.list-item')
 listItem.forEach((el) => observer.observe(el))
+
+const projectItem = document.querySelectorAll('.project-item')
+projectItem.forEach((al) => observer.observe(al))
