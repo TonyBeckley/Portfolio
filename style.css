@@ -157,22 +157,22 @@ footer{
     transition-delay: 100ms;
 }
 .list-item:nth-child(2){
-    transition-delay: 300ms;
+    transition-delay: 200ms;
 }
 .list-item:nth-child(3){
-    transition-delay: 500ms;
+    transition-delay: 300ms;
 }
 .list-item:nth-child(4){
-    transition-delay: 700ms;
+    transition-delay: 400ms;
 }
 .list-item:nth-child(5){
-    transition-delay: 900ms;
+    transition-delay: 500ms;
 }
 .list-item:nth-child(6){
-    transition-delay: 1000ms;
+    transition-delay: 600ms;
 }
 .list-item:nth-child(7){
-    transition-delay: 1100ms;
+    transition-delay: 700ms;
 }
 
 /*Project Section*/
@@ -301,7 +301,7 @@ footer{
     outline: none;
     box-shadow: none;
     border: none;
-    color: #fff;
+    color: #000;
     font-size: 1rem;
     letter-spacing: 0.05em;
     z-index: 10;
@@ -349,7 +349,7 @@ footer{
     outline: none;
     box-shadow: none;
     border: none;
-    color: #fff;
+    color: #000;
     resize: none;
     transition: 0.5s;
     z-index: 20;
