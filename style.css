@@ -29,7 +29,12 @@ h2{
     color: #fff;
 }
 hr{
+    position: absolute;
+    width: 80%;
     margin: 0 10%;
+}
+footer{
+    background-color: hsl(0, 0%, 14%);
 }
 .profile-desc h1::after{
     content: '';
@@ -66,12 +71,13 @@ hr{
     list-style-type: none;
 }
 .nav-right img{
-    height: 30px;
-    width: 30px;
-    color: #000;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
 }
 .nav-right li{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .header-name{
     border-bottom: 7px solid #1E5128;
@@ -243,7 +249,7 @@ hr{
 }
 .contact-form::before{
     content: '';
-    z-index: 5;
+    z-index: 1;
     position: absolute;
     background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
     width: 100%;
@@ -255,7 +261,7 @@ hr{
 }
 .contact-form::after{
     content: '';
-    z-index: 5;
+    z-index: 1;
     position: absolute;
     background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
     width: 100%;
@@ -266,20 +272,22 @@ hr{
     transform-origin: bottom right;
     animation-delay: -3s;
 }
+
+/*Form Input styling*/
 .contact-divider form{
     position: absolute;
     inset: 2px;
+    background: #171717;
+    padding: 20px 40px;
+    border-radius: 10px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    background: #171717;
-    padding: 50px 40px;
-    border-radius: 10px;
-    z-index: 10;
 }
 .input-field {
     position: relative;
-    width: 400px;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 30px;
 }
 .input-field input{
     position: relative;
@@ -289,10 +297,64 @@ hr{
     outline: none;
     box-shadow: none;
     border: none;
-    
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    transition: 0.5s;
 }
 .input-field span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
     color: #fff;
+    pointer-events: none;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.input-field input:focus ~ span,
+.input-field input:valid ~ span{
+    color: #45f3ff;
+    transform: translateY(-30px);
+    font-size: 0.75em;
+}
+.input-field i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.input-field input:focus ~ i,.input-field input:valid ~ i{
+    height: 40px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    background: #45f3ff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 10%;
 }
 
 @keyframes animate{
