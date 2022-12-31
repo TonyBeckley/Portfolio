@@ -25,15 +25,18 @@ h1{
     display: inline-block;
 }
 h2{
+    padding-top: 50px;
     font-size: 6rem;
     color: #fff;
 }
 hr{
     position: absolute;
     width: 80%;
-    margin: 0 10%;
+    margin: 20px 10%;
+    margin-bottom: 20px;
 }
 footer{
+    padding-top: 30px;
     background-color: hsl(0, 0%, 14%);
 }
 .profile-desc h1::after{
@@ -51,7 +54,7 @@ footer{
 }
 .first-container{
     margin: 20px 10%;
-    height: 100vh;
+    height: 95vh;
 }
 .minion-background{
     position: absolute;
@@ -69,6 +72,7 @@ footer{
 .nav-right{
     display: flex;
     list-style-type: none;
+    padding-right: 10px;
 }
 .nav-right img{
     aspect-ratio: 3/2;
@@ -242,7 +246,7 @@ footer{
 .contact-form{
     position: relative;
     width: 40%;
-    height: 420px;
+    height: 500px;
     background: transparent;
     border-radius: 10px;
     overflow: hidden;
@@ -251,9 +255,9 @@ footer{
     content: '';
     z-index: 1;
     position: absolute;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    background: linear-gradient(0deg, transparent, #379237, #379237);
     width: 100%;
-    height: 420px;
+    height: 500px;
     top: -50%;
     left: -50%;
     animation: animate 6s linear infinite;
@@ -263,9 +267,9 @@ footer{
     content: '';
     z-index: 1;
     position: absolute;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    background: linear-gradient(0deg, transparent, #379237, #379237);
     width: 100%;
-    height: 420px;
+    height: 500px;
     top: -50%;
     left: -50%;
     animation: animate 6s linear infinite;
@@ -316,7 +320,7 @@ footer{
 
 .input-field input:focus ~ span,
 .input-field input:valid ~ span{
-    color: #45f3ff;
+    color: #379237;
     transform: translateY(-30px);
     font-size: 0.75em;
 }
@@ -326,22 +330,54 @@ footer{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #45f3ff;
+    background: #379237;
     border-radius: 4px;
     overflow: hidden;
     transition: 0.5s;
     pointer-events: none;
     z-index: 9;
 }
+.input-field textarea {
+    position: relative;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: 20px;
+    min-height: 60px;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    resize: none;
+    transition: 0.5s;
+    z-index: 20;
+}
+.input-field textarea::-webkit-scrollbar{
+    display: none;
+}
+.input-field textarea:focus ~ span,
+.input-field textarea:valid ~ span{
+    color: #379237;
+    transform: translateY(-45px);
+    font-size: 0.75em;
+}
 .input-field input:focus ~ i,.input-field input:valid ~ i{
     height: 40px;
+}
+.input-field textarea:focus ~ i,.input-field textarea:valid ~ i{
+    height: 80px;
+}
+.down-a-bit{
+    padding-top: 15px;
 }
 
 button{
     border: none;
     outline: none;
     padding: 15px 25px;
-    background: #45f3ff;
+    background: #379237;
     cursor: pointer;
     border-radius: 4px;
     font-weight: 600;
