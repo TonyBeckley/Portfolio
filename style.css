@@ -39,19 +39,6 @@ footer{
     padding-top: 30px;
     background-color: hsl(0, 0%, 14%);
 }
-.profile-desc h1::after{
-    content: '';
-    position: absolute;
-    width: 75%;
-    border-bottom: 7px solid #1E5128;
-    top: 100%;
-    right: 0;
-    bottom: 0;
-    left: 20%;
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease 2.5s forwards;
-}
 .first-container{
     margin: 20px 10%;
     height: 95vh;
@@ -246,7 +233,7 @@ footer{
 }
 .contact-form{
     position: relative;
-    width: 40%;
+    width: 45%;
     height: 500px;
     background: transparent;
     border-radius: 10px;
@@ -408,16 +395,34 @@ button{
         transform: translateY(0);
     }
 }
+@media (min-width: 1858px) and (max-width: 1980px) {
+    .profile-desc h1::after{
+        content: '';
+        position: absolute;
+        width: 75%;
+        border-bottom: 7px solid #1E5128;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        left: 20%;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 2.5s forwards;
+    }
+}
 @media (min-width: 1340px) and (max-width: 1440px) {
     h1{
         font-size: 5rem;
         width: 50%;
     }
-    .profile-desc h1::after{
-        display: none;
+    h2{
+        font-size: 4.5rem;
     }
     .profile-desc p{
         margin-bottom: 50px;
+    }
+    .contact-form{
+        width: 480px;
     }
 }
 @media (min-width: 1025px) and (max-width: 1339px) {
@@ -429,6 +434,9 @@ button{
         width: 90%;
         margin: 20px 5%;
     }
+    h2{
+        font-size: 4rem;
+    }
     .profile-desc h1::after{
         display: none;
     }
@@ -438,5 +446,11 @@ button{
     }
     .minion-background{
         width: 43%;
+    }
+    .contact-me p{
+        font-size: 1.2rem;
+    }
+    .contact-form{
+        width: 420px;
     }
 }
