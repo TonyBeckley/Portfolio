@@ -464,6 +464,7 @@ button{
     }
     .first-container{
         margin: 20px 5%;
+        height: 700px;
     }
     .first-container p{
         font-size: 1.2rem;
@@ -472,7 +473,6 @@ button{
         right: 5%;
         width: 45%;
         height: 600px;
-        top: 2.5%;
     }
     .contact-me {
         padding: 0 5%;
@@ -485,6 +485,38 @@ button{
         height: 450px;
     }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 650px) and (max-width: 768px) {
+    h1{
+        font-size: 2.8em;
+        width: 50%;
+    }
+    h2{
+        font-size: 2.8rem;
+    }
+    .first-container{
+        margin: 20px 5%;
+        height: 700px;
+    }
+    .first-container p{
+        font-size: 1em;
+    }
+    .minion-background{
+        right: 0;
+        width: 400px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        height: 600px;
+    }
+    .skills ul{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .tools ul{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .contact-me{
+        padding: 0 5%;
+    }
+}
+@media (min-width: 480px) and (max-width: 649px) {
     
 }
