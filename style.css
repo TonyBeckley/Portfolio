@@ -454,3 +454,37 @@ button{
         width: 420px;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1{
+        font-size: 3.4rem;
+        width: 50%;
+    }
+    h2{
+        font-size: 3.2rem;
+    }
+    .first-container{
+        margin: 20px 5%;
+    }
+    .first-container p{
+        font-size: 1.2rem;
+    }
+    .minion-background{
+        right: 5%;
+        width: 45%;
+        height: 600px;
+        top: 2.5%;
+    }
+    .contact-me {
+        padding: 0 5%;
+    }
+    .contact-me p{
+        font-size: 1.2rem;
+    }
+    .contact-form{
+        width: 350px;
+        height: 450px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
