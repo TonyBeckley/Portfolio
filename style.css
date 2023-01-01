@@ -188,7 +188,8 @@ footer{
 }
 .project-styling img{
     width: 90%;
-    height: 400px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
     border-radius: 10px;
 }
 .project-item{
@@ -405,5 +406,37 @@ button{
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@media (min-width: 1340px) and (max-width: 1440px) {
+    h1{
+        font-size: 5rem;
+        width: 50%;
+    }
+    .profile-desc h1::after{
+        display: none;
+    }
+    .profile-desc p{
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1339px) {
+    h1{
+        font-size: 4.3rem;
+        width: 50%;
+    }
+    hr{
+        width: 90%;
+        margin: 20px 5%;
+    }
+    .profile-desc h1::after{
+        display: none;
+    }
+    .profile-desc p{
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+    }
+    .minion-background{
+        width: 43%;
     }
 }
