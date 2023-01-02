@@ -493,6 +493,10 @@ button{
     h2{
         font-size: 2.8rem;
     }
+    hr{
+        margin: 20px 5%;
+        width: 90%;
+    }
     .first-container{
         margin: 20px 5%;
         height: 700px;
@@ -516,7 +520,122 @@ button{
     .contact-me{
         padding: 0 5%;
     }
+    .contact-form{
+        width: 320px;
+        height: 450px;
+    }
+    .foot{
+        padding: 20px 5%;
+    }
 }
-@media (min-width: 480px) and (max-width: 649px) {
-    
+@media /*(min-width: 480px) and*/ (max-width: 649px) {
+    nav{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    h1{
+        font-size: 2.7rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    hr{
+        width: 90%;
+        margin: 20px 5%;
+    }
+    nav p{
+        font-size: 1.3rem;
+        padding-top: 10px;
+    }
+    .nav-right{
+        margin-left: 0;
+        width: 30%;
+        padding-top: 10px;
+        padding-right: 0;
+        justify-content: space-between;
+    }
+    .nav-right img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-right li{
+        margin-left: 0;
+    }
+    .first-container{
+        margin: 0 0;
+        margin-bottom: 20px;
+        height: max-content;
+    }
+    .minion-background{
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 500px;
+        
+    }
+    .minion-background img{
+        margin: 0 auto;
+    }
+    .profile-desc{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    .profile-desc p{
+        width: 80%;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .profile-desc a {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .skills ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .tools ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .projects ul{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .project-styling img{
+        width: 100%;
+    }
+    .contact-me {
+        padding: 20px 5%;
+    }
+    .contact-me h2{
+        margin-bottom: 30px;
+    }
+    .contact-divider {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    .contact-desc{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .foot{
+        font-size: 1.5rem;
+        padding: 0 5%;
+        align-content: center;
+    }
+    .foot p {
+        padding-top: 10px;
+    }
 }
