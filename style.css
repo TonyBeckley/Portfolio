@@ -47,6 +47,7 @@ a:link{
     margin: 20px 10%;
     height: 95vh;
 }
+
 .minion-background{
     position: absolute;
     display: flex;
@@ -642,5 +643,60 @@ button{
     }
     .foot p {
         padding-top: 10px;
+    }
+}
+
+/*Thank you page styling*/
+.thanks-container{
+    margin: 20px 10%;
+    height: 95vh;
+}
+.thanks-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.thanks-message h2{
+    font-size: 5em;
+    padding-top: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.thanks-message p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+.button{
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    background: #379237;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+.thanks-message a{
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 649px) {
+    .thanks-container{
+        width: 100%;
+        margin: 20px 0;
+        justify-content: center;
+    }
+    .thanks-message img{
+        width: 60%;
+        padding-top: 100px;
+    }
+    .thanks-container h2{
+        font-size: 2.5rem;
+        padding-top: 20px;
+    }
+    .thanks-message p{
+        font-size: 1.3rem;
     }
 }
