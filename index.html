@@ -11,7 +11,7 @@
     <section class="first-container">
         <header>
             <nav>
-                <p>TonyIseghohi</p>
+                <a href="#top-page"><p id="#top-page">TonyIseghohi</p></a>
                 <ul class="nav-right">
                     <li><a href="https://github.com/TonyBeckley"><img src="./images/icons8-github-nav.svg" alt="github-icon"></a></li>
                     <li><a href="https://linkedin.com/in/tony-iseghohi-0a31b1152/"><img src="./images/icons8-linkedin-circled.svg" alt="linkedin-icon"></a></li>
@@ -135,14 +135,14 @@
                 <p>I would love to hear about your ideas and how I could help bring them to reality. Kindly send a message using the form, and I'll get back to you as soon as possible.</p>
             </div>
             <div class="contact-form">
-                <form action="tonybeckley43@outlook.com" method="post" enctype="text/plain" autocomplete="off">
+                <form action="https://formsubmit.co/tonybeckley43@outlook.com" method="POST">
                     <div class="input-field">
-                        <input type="text" id="contact-name" required>
+                        <input type="text" name="name" id="contact-name" required>
                         <span>Name</span>
                         <i></i>
                     </div>
                     <div class="input-field">
-                        <input type="email" id="contact-mail" required>
+                        <input type="email" name="email" id="contact-mail" required>
                         <span>Email</span>
                         <i></i>
                     </div>
@@ -151,8 +151,8 @@
                         <span id="span-message">Message</span>
                         <i id="i-message"></i>
                     </div>
-                    
-                    <button type="submit" value="Send">SEND MESSAGE</button>
+                    <input type="hidden" name="_next" value="https://tonybeckley.netlify.app">
+                    <button type="submit">SEND MESSAGE</button>
                 </form>
             </div>
         </div>

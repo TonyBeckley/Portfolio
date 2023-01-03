@@ -10,6 +10,7 @@ body{
 }
 nav{
     display: flex;
+    position: sticky;
     justify-content: space-between;
     font-size: 2rem;
     font-weight: 600;
@@ -38,6 +39,9 @@ hr{
 footer{
     padding-top: 30px;
     background-color: hsl(0, 0%, 14%);
+}
+a:link{
+    text-decoration: none;
 }
 .first-container{
     margin: 20px 10%;
@@ -633,7 +637,7 @@ button{
     .foot{
         font-size: 1.5rem;
         padding: 0 5%;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         align-content: center;
     }
     .foot p {
