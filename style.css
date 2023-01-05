@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 body{
     background-color: #1B1A17;
@@ -76,7 +76,7 @@ a:link{
     margin-left: 30px;
 }
 .header-name{
-    border-bottom: 7px solid #1E5128;
+    border-bottom: 2px solid #1E5128;
 }
 .profile-desc p{
     font-size: 1.6rem;
@@ -97,7 +97,7 @@ a:link{
 .profile-desc a::after{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 95%;
     border: 3px solid #1E5128;
     top: 30px;
     right: 0;
@@ -404,7 +404,7 @@ button{
     .profile-desc h1::after{
         content: '';
         position: absolute;
-        width: 75%;
+        width: 72%;
         border-bottom: 7px solid #1E5128;
         top: 100%;
         right: 0;
