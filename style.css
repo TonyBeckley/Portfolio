@@ -294,8 +294,9 @@ a:link{
     outline: none;
     box-shadow: none;
     border: none;
-    color: #000;
+    color: #fff;
     font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.05em;
     z-index: 10;
     transition: 0.5s;
@@ -342,7 +343,8 @@ a:link{
     outline: none;
     box-shadow: none;
     border: none;
-    color: #000;
+    color: #fff;
+    font-weight: 700;
     resize: none;
     transition: 0.5s;
     z-index: 20;
@@ -371,6 +373,7 @@ button{
     outline: none;
     padding: 15px 25px;
     background: #379237;
+    color: #fff;
     cursor: pointer;
     border-radius: 4px;
     font-weight: 600;
